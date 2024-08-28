@@ -1,0 +1,25 @@
+set_pin_assignment	{ Buzzer_Out }	{ LOCATION = H11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ CLK }	{ LOCATION = R7; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ DigitronCS_Out[0] }	{ LOCATION = C9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ DigitronCS_Out[1] }	{ LOCATION = B6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ DigitronCS_Out[2] }	{ LOCATION = A5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ DigitronCS_Out[3] }	{ LOCATION = A3; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[0] }	{ LOCATION = A4; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[1] }	{ LOCATION = A6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[2] }	{ LOCATION = B8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[3] }	{ LOCATION = E8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[4] }	{ LOCATION = A7; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[5] }	{ LOCATION = B5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[6] }	{ LOCATION = A8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Digitron_Out[7] }	{ LOCATION = C8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_In[0] }	{ LOCATION = E11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_In[1] }	{ LOCATION = D11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_In[2] }	{ LOCATION = C11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_In[3] }	{ LOCATION = F10; IOSTANDARD = LVCMOS33; }
+
+set_pin_assignment	{ RSTn }	{ LOCATION = A9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_Row[0] }	{ LOCATION = D9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_Row[1] }	{ LOCATION = F9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_Row[2] }	{ LOCATION = C10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment	{ Key_Row[3] }	{ LOCATION = E10; IOSTANDARD = LVCMOS33; }
+

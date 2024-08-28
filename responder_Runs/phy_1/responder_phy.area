@@ -1,0 +1,87 @@
+standard
+***Report Model: responder Device: EG4S20BG256***
+
+IO Statistics
+#IO                        23
+  #input                    6
+  #output                  17
+  #inout                    0
+
+Utilization Statistics
+#lut                      304   out of  19600    1.55%
+#reg                      197   out of  19600    1.01%
+#le                       325
+  #lut only               128   out of    325   39.38%
+  #reg only                21   out of    325    6.46%
+  #lut&reg                176   out of    325   54.15%
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       23   out of    188   12.23%
+  #ireg                     4
+  #oreg                    12
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       4   out of     16   25.00%
+
+Clock Resource Statistics
+Index     ClockNet                 Type               DriverType         Driver                   Fanout
+#1        CLK_dup_1                GCLK               io                 CLK_syn_2.di             115
+#2        U4/W_DigitronCS_Out_n    GCLK               mslice             U4/reg2_syn_29.f1        7
+#3        U4/W_Digitron_Out_n      GCLK               lslice             U4/mux1_syn_5.f0         7
+#4        U4/SingleNum_b_n4        GCLK               lslice             U4/reg2_syn_25.f0        3
+#5        U2/CLK1                  GCLK               mslice             U2/CLK1_reg_syn_33.q0    2
+
+
+Detailed IO Report
+
+        Name           Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+         CLK             INPUT         R7        LVCMOS33          N/A          PULLUP      NONE    
+      Key_In[3]          INPUT        F10        LVCMOS33          N/A          PULLUP      IREG    
+      Key_In[2]          INPUT        C11        LVCMOS33          N/A          PULLUP      IREG    
+      Key_In[1]          INPUT        D11        LVCMOS33          N/A          PULLUP      IREG    
+      Key_In[0]          INPUT        E11        LVCMOS33          N/A          PULLUP      IREG    
+        RSTn             INPUT         A9        LVCMOS33          N/A          PULLUP      NONE    
+     Buzzer_Out         OUTPUT        H11        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[3]     OUTPUT         A3        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[2]     OUTPUT         A5        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[1]     OUTPUT         B6        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[0]     OUTPUT         C9        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[7]      OUTPUT         C8        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[6]      OUTPUT         A8        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[5]      OUTPUT         B5        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[4]      OUTPUT         A7        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[3]      OUTPUT         E8        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[2]      OUTPUT         B8        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[1]      OUTPUT         A6        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[0]      OUTPUT         A4        LVCMOS33           8            NONE       OREG    
+     Key_Row[3]         OUTPUT        E10        LVCMOS33           8            NONE       NONE    
+     Key_Row[2]         OUTPUT        C10        LVCMOS33           8            NONE       NONE    
+     Key_Row[1]         OUTPUT         F9        LVCMOS33           8            NONE       NONE    
+     Key_Row[0]         OUTPUT         D9        LVCMOS33           8            NONE       NONE    
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------+
+|Instance |Module              |le     |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------+
+|top      |responder           |325    |242     |62      |213     |0       |0       |
+|  U1     |Sel_module          |104    |71      |16      |66      |0       |0       |
+|  U2     |Timer_module        |52     |50      |0       |49      |0       |0       |
+|  U3     |Buzzer_module       |46     |33      |12      |28      |0       |0       |
+|  U4     |Digitron_NumDisplay |58     |49      |9       |26      |0       |0       |
+|  U5     |key_filter          |37     |25      |11      |24      |0       |0       |
++-----------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1       235   
+    #2         2       174   
+    #3         3        19   
+    #4         4        11   
+    #5        5-10      22   
+    #6       11-50      10   
+  Average     2.16           
