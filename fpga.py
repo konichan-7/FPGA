@@ -13,7 +13,7 @@ ser = serial.Serial(
 )
 
 # 读取图像
-image = cv2.imread('5.jpg')  # 读取图像文件
+image = cv2.imread('assets/5.jpg')  # 读取图像文件
 height, width, _ = image.shape
 
 # 等比例缩放图像，最大边长度为100
