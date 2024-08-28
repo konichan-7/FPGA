@@ -1,0 +1,45 @@
+standard
+***Report Model: rx_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        25
+  #input                    4
+  #output                  21
+  #inout                    0
+
+LUT Statistics
+#Total_luts               296
+  #lut4                   158
+  #lut5                    32
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             106
+
+Utilization Statistics
+#lut                      296   out of  19600    1.51%
+#reg                      107   out of  19600    0.55%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       25   out of    188   13.30%
+  #ireg                     1
+  #oreg                    13
+  #treg                     0
+#pll                        0   out of      4    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------+
+|Instance |Module              |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------+
+|top      |rx_top              |190     |106     |121     |0       |0       |
+|  U1     |detect_module       |1       |0       |1       |0       |0       |
+|  U2     |rx_bps_module       |18      |14      |13      |0       |0       |
+|  U3     |rx_control_module   |29      |17      |14      |0       |0       |
+|  U5     |Digitron_NumDisplay |64      |42      |22      |0       |0       |
+|  U6     |calculate_rx        |35      |0       |27      |0       |0       |
+|  U7     |tx_bitrate          |18      |14      |13      |0       |0       |
+|  U8     |uart_tx             |17      |0       |6       |0       |0       |
++---------------------------------------------------------------------------+

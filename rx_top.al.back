@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2021-06-24 16:28:55</Project_Created_Time>
+    <TD_Version>4.6.30127</TD_Version>
+    <UCode>01011000</UCode>
+    <Name>rx_top</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>rx_top.v</File>
+            <File>detect_module.v</File>
+            <File>rx_bps_module.v</File>
+            <File>rx_control_module.v</File>
+            <File>LED_display_module.v</File>
+        </Verilog>
+        <ADC_FILE>rx_top.adc</ADC_FILE>
+        <SDC_FILE/>
+        <CWC_FILE>rx_top.cwc</CWC_FILE>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>rx_top</MODULE>
+        <CREATEINDEX>auto</CREATEINDEX>
+    </TOP_MODULE>
+    <Project_Settings>
+        <Step_Last_Change>2021-07-15 19:39:07</Step_Last_Change>
+        <Current_Step>60</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

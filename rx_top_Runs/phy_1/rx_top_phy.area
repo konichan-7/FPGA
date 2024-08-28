@@ -1,0 +1,112 @@
+standard
+***Report Model: rx_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        25
+  #input                    4
+  #output                  21
+  #inout                    0
+
+Utilization Statistics
+#lut                      722   out of  19600    3.68%
+#reg                      542   out of  19600    2.77%
+#le                       904
+  #lut only               362   out of    904   40.04%
+  #reg only               182   out of    904   20.13%
+  #lut&reg                360   out of    904   39.82%
+#dsp                        0   out of     29    0.00%
+#bram                      34   out of     64   53.12%
+  #bram9k                  34
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       25   out of    188   13.30%
+  #ireg                     1
+  #oreg                    13
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       3   out of     16   18.75%
+
+Clock Resource Statistics
+Index     ClockNet             Type               DriverType         Driver                     Fanout
+#1        config_inst_syn_9    GCLK               config             config_inst.jtck           170
+#2        CLK_500K             GCLK               lslice             cnt2_b[4]_syn_19.q0        169
+#3        CLK_dup_1            GCLK               io                 CLK_syn_2.di               19
+#4        U5/SingleNum_n       GCLK               lslice             U5/SingleNum_n_syn_7.f0    8
+
+
+Detailed IO Report
+
+        Name           Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+         CLK             INPUT         R7        LVCMOS33          N/A          PULLUP      NONE    
+        RSTn             INPUT         A9        LVCMOS33          N/A          PULLUP      NONE    
+      RX_En_Sig          INPUT        A10        LVCMOS33          N/A          PULLUP      NONE    
+      RX_Pin_In          INPUT        F12        LVCMOS33          N/A          PULLUP      IREG    
+  DigitronCS_Out[3]     OUTPUT         A3        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[2]     OUTPUT         A5        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[1]     OUTPUT         B6        LVCMOS33           8            NONE       OREG    
+  DigitronCS_Out[0]     OUTPUT         C9        LVCMOS33           8            NONE       OREG    
+   Digitron_Out[7]      OUTPUT         C8        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[6]      OUTPUT         A8        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[5]      OUTPUT         B5        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[4]      OUTPUT         A7        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[3]      OUTPUT         E8        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[2]      OUTPUT         B8        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[1]      OUTPUT         A6        LVCMOS33           8            NONE       NONE    
+   Digitron_Out[0]      OUTPUT         A4        LVCMOS33           8            NONE       NONE    
+     LED_Out[7]         OUTPUT        F16        LVCMOS33           8            NONE       OREG    
+     LED_Out[6]         OUTPUT        E16        LVCMOS33           8            NONE       OREG    
+     LED_Out[5]         OUTPUT        E13        LVCMOS33           8            NONE       OREG    
+     LED_Out[4]         OUTPUT        C16        LVCMOS33           8            NONE       OREG    
+     LED_Out[3]         OUTPUT        C15        LVCMOS33           8            NONE       OREG    
+     LED_Out[2]         OUTPUT        B16        LVCMOS33           8            NONE       OREG    
+     LED_Out[1]         OUTPUT        B15        LVCMOS33           8            NONE       OREG    
+     LED_Out[0]         OUTPUT        B14        LVCMOS33           8            NONE       OREG    
+     TX_Pin_Out         OUTPUT        D12        LVCMOS33           8            NONE       OREG    
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------+
+|Instance                             |Module              |le     |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------------------------------------+
+|top                                  |rx_top              |904    |586     |136     |556     |34      |0       |
+|  U1                                 |detect_module       |1      |1       |0       |1       |0       |0       |
+|  U2                                 |rx_bps_module       |27     |23      |4       |13      |0       |0       |
+|  U3                                 |rx_control_module   |41     |36      |5       |14      |0       |0       |
+|  U5                                 |Digitron_NumDisplay |104    |86      |18      |22      |0       |0       |
+|  U6                                 |calculate_rx        |39     |39      |0       |25      |0       |0       |
+|  U7                                 |tx_bitrate          |27     |23      |4       |13      |0       |0       |
+|  U8                                 |uart_tx             |21     |21      |0       |9       |0       |0       |
+|  cw_top                             |CW_TOP_WRAPPER      |613    |336     |95      |432     |0       |0       |
+|    wrapper_cwc_top                  |cwc_top             |613    |336     |95      |432     |0       |0       |
+|      cfg_int_inst                   |cwc_cfg_int         |298    |136     |0       |294     |0       |0       |
+|        reg_inst                     |register            |296    |134     |0       |292     |0       |0       |
+|        tap_inst                     |tap                 |2      |2       |0       |2       |0       |0       |
+|      trigger_inst                   |trigger             |315    |200     |95      |138     |0       |0       |
+|        bus_inst                     |bus_top             |106    |68      |34      |49      |0       |0       |
+|          BUS_DETECTOR[0]$bus_nodes  |bus_det             |2      |1       |0       |2       |0       |0       |
+|          BUS_DETECTOR[10]$bus_nodes |bus_det             |3      |2       |0       |3       |0       |0       |
+|          BUS_DETECTOR[11]$bus_nodes |bus_det             |1      |1       |0       |1       |0       |0       |
+|          BUS_DETECTOR[1]$bus_nodes  |bus_det             |14     |8       |6       |5       |0       |0       |
+|          BUS_DETECTOR[2]$bus_nodes  |bus_det             |2      |2       |0       |2       |0       |0       |
+|          BUS_DETECTOR[3]$bus_nodes  |bus_det             |46     |28      |18      |14      |0       |0       |
+|          BUS_DETECTOR[4]$bus_nodes  |bus_det             |2      |2       |0       |2       |0       |0       |
+|          BUS_DETECTOR[5]$bus_nodes  |bus_det             |27     |17      |10      |11      |0       |0       |
+|          BUS_DETECTOR[6]$bus_nodes  |bus_det             |2      |1       |0       |2       |0       |0       |
+|          BUS_DETECTOR[7]$bus_nodes  |bus_det             |2      |2       |0       |2       |0       |0       |
+|          BUS_DETECTOR[8]$bus_nodes  |bus_det             |3      |2       |0       |3       |0       |0       |
+|          BUS_DETECTOR[9]$bus_nodes  |bus_det             |2      |2       |0       |2       |0       |0       |
+|        emb_ctrl_inst                |emb_ctrl            |106    |77      |29      |49      |0       |0       |
++---------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets  
+    #1          1       487   
+    #2          2       389   
+    #3          3       114   
+    #4          4        27   
+    #5        5-10       49   
+    #6        11-50      60   
+    #7       51-100      4    
+    #8       101-500     2    
+  Average     3.45            

@@ -1,0 +1,33 @@
+standard
+***Report Model: rx_top***
+
+IO Statistics
+#IO                    12
+  #input                4
+  #output               8
+  #inout                0
+
+Utilization Statistics
+#lut                  105   out of  19600    0.54%
+#reg                   39   out of  19600    0.20%
+#le                   105
+  #lut only            66   out of    105   62.86%
+  #reg only             0   out of    105    0.00%
+  #lut&reg             39   out of    105   37.14%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   12   out of    188    6.38%
+  #ireg                 1
+  #oreg                 8
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |rx_top |105   |105   |39    |
++--------------------------------------+

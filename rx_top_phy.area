@@ -1,0 +1,44 @@
+standard
+***Report Model: rx_top***
+
+IO Statistics
+#IO                    12
+  #input                4
+  #output               8
+  #inout                0
+
+Utilization Statistics
+#lut                  449   out of  19600    2.29%
+#reg                  531   out of  19600    2.71%
+#le                   786
+  #lut only           255   out of    786   32.44%
+  #reg only           337   out of    786   42.88%
+  #lut&reg            194   out of    786   24.68%
+#dsp                    0   out of     29    0.00%
+#bram                   4   out of     64    6.25%
+  #bram9k               4
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   12   out of    188    6.38%
+  #ireg                 1
+  #oreg                 8
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+
+Detailed IO Report
+
+Name           Direction     Location     IOStandard     DriveStrength     PullType     PackReg                  
+CLK            INPUT         R7           LVCMOS33       N/A               PULLUP       NONE                     
+RSTn           INPUT         A9           LVCMOS33       N/A               PULLUP       NONE                     
+RX_En_Sig      INPUT         A10          LVCMOS33       N/A               PULLUP       NONE                     
+RX_Pin_In      INPUT         F12          LVCMOS33       N/A               PULLUP       IREG                     
+LED_Out[7]     OUTPUT        F16          LVCMOS33       8                 NONE         OREG                     
+LED_Out[6]     OUTPUT        E16          LVCMOS33       8                 NONE         OREG                     
+LED_Out[5]     OUTPUT        E13          LVCMOS33       8                 NONE         OREG                     
+LED_Out[4]     OUTPUT        C16          LVCMOS33       8                 NONE         OREG                     
+LED_Out[3]     OUTPUT        C15          LVCMOS33       8                 NONE         OREG                     
+LED_Out[2]     OUTPUT        B16          LVCMOS33       8                 NONE         OREG                     
+LED_Out[1]     OUTPUT        B15          LVCMOS33       8                 NONE         OREG                     
+LED_Out[0]     OUTPUT        B14          LVCMOS33       8                 NONE         OREG                     
+
