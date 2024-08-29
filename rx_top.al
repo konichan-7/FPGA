@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project Version="3" Minor="2" Path="C:/Users/Lenovo/Desktop/Codes_Basic/Codes/14.1 uart_rx_top/rx_top">
+<Project Version="3" Minor="2" Path="C:/Users/Lenovo/Desktop/FPGA">
     <Project_Created_Time></Project_Created_Time>
     <TD_Version>5.6.71036</TD_Version>
     <UCode>01011000</UCode>
@@ -95,7 +95,7 @@
             </File>
         </ADC_FILE>
         <CWC_FILE>
-            <File Path="tx.cwc">
+            <File Path="../Codes_Basic/Codes/14.1 uart_rx_top/rx_top/tx.cwc">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
