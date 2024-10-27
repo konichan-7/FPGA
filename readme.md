@@ -4,3 +4,4 @@ pip install pyserial
 pip install opencv-python
 ```
 根据实际情况更改COM口
+# 抢答器和数字闹钟在其他分支
